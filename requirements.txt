@@ -3,3 +3,4 @@ diffusers
 opencv-python
 einops
 optree
+pandas

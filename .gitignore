@@ -6,3 +6,6 @@ init.sh
 *.jpeg
 *.png
 *.safetensors
+*.json
+__pycache__
+*.csv*
