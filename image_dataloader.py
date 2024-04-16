@@ -6,6 +6,7 @@ import cv2
 import json
 import bisect
 import pandas as pd
+from torch.utils.data import Dataset
 
 
 def scale(image, scale_factor):
@@ -56,7 +57,7 @@ def download_dataset(json_creds:str, download_dir:str="temp", image_dir:str="tem
     return zip_file.split('/')[-1].split('.')[0] # return chunk name for easier navigation later
 
 
-class ImageDataset():
+class ImageDataset(Dataset):
     def __init__(self, csv_path:str, caption_col:str, filename_col:str, image_dir="temp_image",  round_to=64):
         self.IMAGE_DIR = image_dir
         self.round_to = round_to
