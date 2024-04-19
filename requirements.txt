@@ -4,3 +4,9 @@ opencv-python
 einops
 optree
 pandas
+accelerate
+torchvision
+transformers
+datasets
+wandb
+bitsandbytes

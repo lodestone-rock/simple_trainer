@@ -1,2 +1,3 @@
 #!/bin/bash
-apt-get install python3-opencv
+sudo apt-get install python3-opencv -y
+sudo apt-get install p7zip-full -y
